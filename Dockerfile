@@ -92,9 +92,9 @@ RUN apt-get -y update \
  && mv /opt /original-opt \
  && ln -sf /efs/opt /opt \
  && mv /etc/nginx /original-nginx \
- && ln -sf /efc/nginx /etc/nginx \
+ && ln -sf /efs/nginx /etc/nginx \
  && mv /var/log /original-log \
- && ln -sf /efc/log /var/log
+ && ln -sf /efs/log /var/log
 
 ADD entrypoint.sh /entrypoint.sh
 
