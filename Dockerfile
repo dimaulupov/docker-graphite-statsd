@@ -92,7 +92,7 @@ RUN apt-get -y update \
  && mv /opt /original-opt \
  && ln -sf /efs/opt /opt \
  && mv /etc/nginx /original-nginx \
- && ln -sf /efc/etc/nginx /etc/nginx \
+ && ln -sf /efc/nginx /etc/nginx \
  && mv /var/log /original-log \
  && ln -sf /efc/log /var/log
 
