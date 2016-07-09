@@ -15,7 +15,4 @@ mv -vn /original-opt /efs/opt
 mv -vn /original-nginx /efs/nginx
 mv -vn /original-log /efs/log
 
-chmod -R a+Xrw /efs/opt /efs/nginx /efs/log
-chmod -R +rw /efs/opt /efs/nginx /efs/log
-
 /sbin/my_init
