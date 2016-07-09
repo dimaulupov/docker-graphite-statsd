@@ -11,6 +11,7 @@ REGION=`curl -s http://169.254.169.254/latest/dynamic/instance-identity/document
 mount -t nfs4 -o nfsvers=4.1 $(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone).${EFS_FS_ID}.efs.${REGION}.amazonaws.com:/ /efs
 
 # -n will not overwrite files in /efs
+
 mv -vn /original-opt /efs/opt
 mv -vn /original-nginx /efs/nginx
 mv -vn /original-log /efs/log
