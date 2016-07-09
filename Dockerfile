@@ -91,8 +91,8 @@ RUN apt-get -y update \
  && mkdir /efs \
  && mv /opt /original-opt \
  && ln -sf /efs/opt /opt \
- && mv /etc /original-etc \
- && ln -sf /efc/etc /etc \
+ && mv /etc/nginx /original-nginx \
+ && ln -sf /efc/etc/nginx /etc/nginx \
  && mv /var/log /original-log \
  && ln -sf /efc/log /var/log
 

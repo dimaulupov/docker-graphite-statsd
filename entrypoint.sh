@@ -12,7 +12,7 @@ mount -t nfs4 -o nfsvers=4.1 $(curl -s http://169.254.169.254/latest/meta-data/p
 
 # -n will not overwrite files in /efs
 mv -vn /original-opt /efs/opt
-mv -vn /original-etc /efs/etc
+mv -vn /original-nginx /efs/etc/nginx
 mv -vn /original-log /efs/log
 
 /sbin/my_init
